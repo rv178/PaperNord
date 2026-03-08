@@ -6,7 +6,7 @@
 	--header-height: 60px;
 	--footer-height: 60px;
 	--radius: 0px;
-	--theme: #e5e9f0;
+	--theme: #d8dee9;
 	--entry: #d8dee9;
 	--primary: #5e81ac;
 	--secondary: #4c566a;
@@ -29,10 +29,4 @@
 	--border: #81a1c1;
 }
 
-.list {
-	background: var(--code-bg);
-}
 
-.dark.list {
-	background: var(--theme);
-}
