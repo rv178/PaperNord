@@ -1,0 +1,6 @@
+{{- $name := site.Params.webringName | default "rohith" }}
+<span>
+	| <a href="https://ring.seggs.lol/redirect?from={{ $name }}&dir=prev" rel="noopener" title="Previous site in the webring">&larr; prev</a>
+	- <a href="https://ring.seggs.lol/" rel="noopener" target="_blank">webring</a> -
+	<a href="https://ring.seggs.lol/redirect?from={{ $name }}&dir=next" rel="noopener" title="Next site in the webring">next &rarr;</a>
+</span>
