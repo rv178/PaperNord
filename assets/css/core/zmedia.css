@@ -4,9 +4,23 @@
         --gap: 14px;
     }
 
+    /* reset: comfortable base size for monospace on narrow screens */
+    body {
+        font-size: 16px;
+    }
+
+    /* main: list & section page titles (Posts, Reviews, Tags…) */
+    .page-header h1 {
+        font-size: 28px;
+    }
+
     /* profile-mode */
     .profile img {
         transform: scale(0.85);
+    }
+
+    .profile .profile_inner h1 {
+        font-size: 28px;
     }
 
     /* post-single: scale down content for narrow viewports */
@@ -37,6 +51,19 @@
         min-height: 260px;
     }
 
+    .first-entry .entry-header h1 {
+        font-size: 26px;
+    }
+
+    .entry-header h2 {
+        font-size: 20px;
+    }
+
+    /* 404 */
+    .not-found {
+        font-size: 96px;
+    }
+
     /* archive */
     .archive-month {
         flex-direction: column;
@@ -57,6 +84,37 @@
     ::-webkit-scrollbar {
         width: 19px;
         height: 11px;
+    }
+}
+
+/* small phones: rein in the largest headings so they don't overflow */
+@media screen and (max-width: 480px) {
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .profile .profile_inner h1 {
+        font-size: 24px;
+    }
+
+    .post-title {
+        font-size: 26px;
+    }
+
+    .post-content h1 {
+        font-size: 24px;
+    }
+
+    .post-content h2 {
+        font-size: 21px;
+    }
+
+    .first-entry .entry-header h1 {
+        font-size: 22px;
+    }
+
+    .not-found {
+        font-size: 72px;
     }
 }
 
