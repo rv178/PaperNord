@@ -12,6 +12,12 @@
 	box-sizing: border-box;
 }
 
+/* KaTeX \htmlClass{jbmono}{...}; override KaTeX's own font on inner spans */
+.jbmono,
+.jbmono * {
+	font-family: "JetBrains Mono", monospace !important;
+}
+
 html {
 	-webkit-tap-highlight-color: transparent;
 	overflow-y: scroll;
