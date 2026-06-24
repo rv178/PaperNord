@@ -1,0 +1,8 @@
+{{- $opts := dict
+  "displayMode" (eq .Type "block")
+  "output" "html"
+  "throwOnError" false
+  "strict" "ignore"
+-}}
+{{- transform.ToMath .Inner $opts -}}
+{{- /* build-time KaTeX render kills the on-reload reflow/flicker. Hugo's ToMath doesn't plumb KaTeX `trust`, so trust-gated cmds (\htmlClass, \href) won't render — use \texttt etc. instead. */ -}}

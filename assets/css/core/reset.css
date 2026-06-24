@@ -12,10 +12,17 @@
 	box-sizing: border-box;
 }
 
-/* KaTeX \htmlClass{jbmono}{...}; override KaTeX's own font on inner spans */
-.jbmono,
-.jbmono * {
+/* KaTeX \texttt{...}; override KaTeX's typewriter font with JetBrains Mono */
+.katex .texttt,
+.katex .texttt * {
 	font-family: "JetBrains Mono", monospace !important;
+}
+
+/* Wide display math (e.g. NW grids) scrolls instead of overflowing the page */
+.katex-display {
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 0.5em 0; /* room so the scrollbar doesn't clip the equation */
 }
 
 html {
